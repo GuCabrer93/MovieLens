@@ -9,7 +9,7 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Introduction
+## Introduction2
 
 This is a report on 2010 gun murder rates obtained from FBI reports. The original data was obtained from [this Wikipedia page](https://en.wikipedia.org/wiki/Murder_in_the_United_States_by_state).
 
@@ -35,4 +35,69 @@ murders %>% mutate(abb = reorder(abb, rate)) %>%
   geom_bar(width = 0.5, stat = "identity", color = "black") +
   coord_flip()
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Files
+The appropriate files are submitted in the correct formats: a report in both PDF and Rmd format and an R script in R format. The PDF version of the report should be knit from your Rmd file, and the R script should contain all of the code and comments for your project.
+
+## Code
+The code in the R script should run without errors and should be well-commented and easy to follow. It should also use relative file paths and automatically install missing packages. The dataset you use should either be automatically downloaded by your code or provided in your GitHub repo along with the rest of your files (Rmd, PDF, R). If your dataset is provided as a zip file in GitHub, your code should automatically unzip and load it. The R script should contain all of the code and comments for your project.
+
+Code runs easily, is easy to follow, is consistent with the report, and is well-commented. All file paths are relative and missing [packages are automatically installed](https://www.r-bloggers.com/loading-r-packages-library-or-require/) with if(!require) statements.
+
+
+
+
+
+## Overview
+Section that describes the dataset and variables, and summarizes the goal of the project and key steps that were performed.
+
+## Analysis
+Section that explains the process and techniques used, including data cleaning, data exploration and visualization, any insights gained, and your modeling approach. At least two different models or algorithms must be used, with at least one being more advanced than linear or logistic regression for prediction problems.
+
+## Results
+Section that presents the modeling results and discusses the model performance.
+
+## Conclusion
+Section that gives a brief summary of the report, its potential impact, its limitations, and future work.
 

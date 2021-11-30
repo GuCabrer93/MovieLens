@@ -53,3 +53,7 @@ removed <- anti_join(temp, validation)
 edx <- rbind(edx, removed)
 
 rm(dl, ratings, movies, test_index, temp, movielens, removed)
+
+save(edx, file = "rdas/edx")
+save(validation, file = "rdas/validation")
+
